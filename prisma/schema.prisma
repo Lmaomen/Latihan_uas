@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model organisasi {
+  id               Int        @id @default(autoincrement())
+  nama_organisasi  String
+  ketua_organisasi String
+  no_kontak        String
+  tahun_dibentuk   DateTime
+  pembina          String
+  kegiatan         kegiatan[]
+}
+
+model kegiatan {
+  id                Int        @id @default(autoincrement())
+  judul_kegiatan    String
+  id_organisasi     Int
+  tanggal_kegiatan  DateTime
+  lokasi            String
+  jenis_kegiatan    String
+  deskripsi_singkat String
+  organisasi        organisasi @relation(fields: [id_organisasi], references: [id])
+}

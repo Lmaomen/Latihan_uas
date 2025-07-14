@@ -1,0 +1,116 @@
+.container {
+    padding: 30px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.buttonNavigate {
+    background-color: transparent;
+    color: white;
+    border: 1px white;
+    border-style: solid;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+.buttonNavigate:hover {
+    background-color: white;
+    color: black;
+}
+
+.buttonToggle {
+    background-color: #4e4273;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonToggle:hover {
+    background-color: #187bb5;
+}
+
+.dropdownNavigate {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    max-width: 150px;
+}
+
+.dropdownNavigate:hover {
+    background-color: white;
+    color: black;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+}
+
+.formWrapper {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.formWrapper h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.formWrapper h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup span {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.submitButton {
+    background-color: #4e4273;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #187bb5;
+}
+
+.subtitle {
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.tableWrapper {
+    margin-top: 30px;
+}
+
+.tableWrapper th, .tableWrapper td {
+    text-align: center;
+    vertical-align: middle;
+}
